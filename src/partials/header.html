@@ -1,20 +1,46 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <title><!--#echo var="title" --></title>
-    <meta name="description" content="Gulp 5 Start Template" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no, date=no, url=no" />
+    <meta name="theme-color" content="#5D71DD" />
+    <meta name="author" content="a.nikonorov" />
+    <meta name="description" content="Test task for Goszakaz Group" />
+    <meta name="keywords" content="test, task, Goszakaz Group" />
+    <title><!--#echo var="title" --></title>
     <link rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="css/app.min.css" />
   </head>
-
-  <body>
-    <div class="page-wrapper">
-      <header class="header">
-        <div class="header__container container-fluid">
-          <div>Header</div>
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="header__container container-fluid">
+        <a class="header__logo" href="#" aria-label="Logo">
+          <img class="header__logo-img" src="images/dist/logo.svg" alt="Logo">
+        </a>
+        <div class="header__right">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link header__nav-link--current" href="#">Главная</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">О нас</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Контакты</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Поиск</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__phone" href="tel:+798788787">
+            <svg><use href="images/dist/sprite.svg#phone"></use></svg>
+            <span>+7 (987) 887-87</span>
+          </a>
         </div>
-      </header>
-  </body>
-</html>
+      </div>
+    </header>

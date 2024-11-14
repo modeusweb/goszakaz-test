@@ -1,4 +1,67 @@
 .header {
-  min-height: 70px;
+  padding: 11px 0 3px;
   background: $secondary-background-color;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    &-img {
+      width: 54px;
+      height: 56px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: $primary-gap;
+    transform: translateY(-2px);
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px $primary-gap;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    &-link {
+      &--current {
+        color: $primary-color;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        text-underline-offset: 3px;
+      }
+    }
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: $small-gap;
+    color: $primary-color;
+    font-weight: 500;
+
+    &:hover {
+      color: $primary-text-color;
+    }
+
+    svg {
+      width: 15px;
+      height: 15px;
+      transform: translateY(-1px);
+    }
+  }
 }

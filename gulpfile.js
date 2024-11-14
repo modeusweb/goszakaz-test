@@ -135,7 +135,9 @@ function compileStyles() {
  * @returns {Stream} Gulp stream
  */
 function optimizeImages() {
-  return src(['src/images/src/**/*'], { encoding: false })
+  return src(['src/images/src/**/*', '!src/images/src/**/*.svg'], {
+    encoding: false,
+  })
     .pipe(changed('src/images/dist'))
     .pipe(imageMin())
     .pipe(dest('src/images/dist'))

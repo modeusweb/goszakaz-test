@@ -1,4 +1,51 @@
 .footer {
-  min-height: 273px;
+  padding: 43px 0 40px;
   background: $light-background-color;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    transform: translate(2px, -3px);
+
+    &-img {
+      width: 54px;
+      height: 56px;
+    }
+  }
+
+  &__nav {
+    margin-top: 30px;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px clamp(20px, 5vw, 80px);
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    &-link {
+      &--current {
+        color: $primary-color;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        text-underline-offset: 3px;
+      }
+    }
+  }
+
+  &__copyright {
+    margin-top: clamp(20px, 5vw, 65px);
+    font-size: $small-font-size;
+    line-height: 1.15;
+  }
 }

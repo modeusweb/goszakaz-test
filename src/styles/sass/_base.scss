@@ -2,6 +2,18 @@ body {
   font-family: $primary-font-family;
   background: $primary-background-color;
   color: $primary-text-color;
+  font-size: $primary-font-size;
+  line-height: $primary-line-height;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+
+  &:hover {
+    color: $primary-color;
+  }
 }
 
 .container-fluid {
