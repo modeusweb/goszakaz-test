@@ -1,5 +1,56 @@
 <!--#set var="title" value="Главная" -->
 <!--#include virtual="/partials/header.html" -->
-    <div class="banner"></div>
-    <main class="main-area"></main>
+    <div class="banner">
+      <picture>
+        <source media="(max-width: 575px)" srcset="images/dist/banner-xs.webp" type="image/webp">
+        <source media="(max-width: 1199px)" srcset="images/dist/banner-md.webp" type="image/webp">
+        <source media="(min-width: 1200px)" srcset="images/dist/banner.webp" type="image/webp">
+        <img class="banner__img" src="images/dist/banner.webp" alt="Banner">
+      </picture>
+    </div>
+    <main class="main-area">
+      <div class="layout container">
+        <section class="articles">
+          <div class="articles__list">
+            <article class="article"></article>
+            <article class="article"></article>
+            <article class="article article--accent"></article>
+            <article class="article article--accent"></article>
+            <article class="article"></article>
+            <article class="article"></article>
+            <article class="article"></article>
+            <article class="article article--accent"></article>
+            <article class="article article--accent"></article>
+            <article class="article"></article>
+            <article class="article"></article>
+          </div>
+        </section>
+        <aside class="sidebar">
+          <div class="sidebar__news">
+            <h2 class="sidebar__news-title">Популярные новости</h2>
+            <div class="sidebar__news-list">
+              <a class="sidebar__news-item" href="#">
+                <div class="sidebar__news-item-preview">ITAM&SAMDay – самая настоящая удача!</div>
+                <time class="sidebar__news-item-time" datetime="2020-12-13">13 дек 2020</time>
+              </a>
+              <a class="sidebar__news-item" href="#">
+                <div class="sidebar__news-item-preview">Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...</div>
+                <time class="sidebar__news-item-time" datetime="2020-12-10">10 дек 2020</time>
+              </a>
+              <a class="sidebar__news-item" href="#">
+                <div class="sidebar__news-item-preview">Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</div>
+                <time class="sidebar__news-item-time" datetime="2020-12-05">5 дек 2020</time>
+              </a>
+            </div>
+          </div>
+          <div class="sidebar__subscribe">
+            <h2 class="sidebar__subscribe-title">Подписка на рассылку</h2>
+            <form class="sidebar__subscribe-form" action="#">
+              <input class="sidebar__subscribe-input" type="email" placeholder="Email@gmail.com" required>
+              <button class="sidebar__subscribe-btn" type="submit">Подписаться</button>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </main>
 <!--#include virtual="/partials/footer.html" -->

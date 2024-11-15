@@ -1,0 +1,47 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: $secondary-gap;
+  padding-top: 1px;
+
+  &__news {
+    &-title {
+      font-size: $title-font-size;
+      margin-bottom: 20px;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 11px 0 8px;
+      border-bottom: 1px solid rgba(47, 34, 34, 0.1);
+
+      &:last-child {
+        border: none;
+      }
+
+      &-time {
+        color: $light-text-color;
+      }
+    }
+  }
+
+  &__subscribe {
+    margin-top: 1px;
+    padding: 30px 30px 50px;
+    background: $secondary-background-color;
+    border-radius: $primary-border-radius;
+
+    &-title {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: $title-font-size;
+    }
+  }
+}
